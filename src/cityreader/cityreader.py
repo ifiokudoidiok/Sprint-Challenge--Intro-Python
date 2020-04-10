@@ -1,4 +1,10 @@
-# Create a class to hold a city location. Call the class "City". It should have
+
+
+
+
+
+
+    # Create a class to hold a city location. Call the class "City". It should have
 # fields for name, lat and lon (representing latitude and longitude).
 
 class City:
@@ -34,10 +40,10 @@ def cityreader(cities=[]):
         for i, row in enumerate(data):
             if i == 0:
                 
-                headers = row
+               
             else:
                 # get city data
-                rowSet = {}
+                rowSet = {} 
                 for h, header in enumerate(headers):
                     if header in allowedFields:
                         rowSet[header] = row[h]
